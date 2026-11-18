@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fast-family-whatsapp-webhook
+    env: python
+    buildCommand: ""
+    startCommand: python3 server.py
+    envVars:
+      - key: VERIFY_TOKEN
+        sync: false
+      - key: APP_SECRET
+        sync: false
